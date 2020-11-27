@@ -26,26 +26,114 @@
   </nav>
 
 
-<div class="container-fluid">
-
-    </div>
-
-<hr class="my-5" />
-
-  <div class="row d-flex my-5">
-
-  </div>
-
-  <div class="row d-flex">
-  </div>
-
-<footer class="footer">
-
-<div class="container-fluid">
-  <!-- Footer -->
-  <div class="row py-3"></div></div>
-</footer>
-
+  <body>
+      <div class="container">
+        <fieldset id="warehouse_info">
+            <legend id="legend">1) Choose your type of last-mile jobs:</legend>
+            <input type="radio" name="job_type" value="deliveries" checked> Deliveries - warehouse to clients
+            <input type="radio" name="job_type" value="returns"> Returns - clients to warehouse
+            <input style=margin-left:15px; type="text" name="warehouse address:" placeholder="enter warehouse address...">
+        </fieldset>
+      </div>
+      <div class="container">
+        <fieldset id="locations_info">
+            <legend id="legend">2) Map your locations info</legend>
+              <label>City:<input type="text" name="city"></label>
+              <label>Main address info
+                <select name="address">
+                  <option value="column A">Column A</option>
+                  <option value="column B" selected>Column B</option>
+                  <option value="column C">Column C</option>
+                  <option value="column D">Column D</option>
+                  <option value="column E">Column E</option>
+                  <option value="column F">Column F</option>
+                  <option value="column G">Column G</option>
+                  <option value="column H">Column H</option>
+                  <option value="column I">Column I</option>
+                  <option value="column J">Column J</option>
+                </select>
+              </label>
+              <label>District
+                <select name="district">
+                  <option value="column A">Column A</option>
+                  <option value="column B">Column B</option>
+                  <option value="column C" selected>Column C</option>
+                  <option value="column D">Column D</option>
+                  <option value="column E">Column E</option>
+                  <option value="column F">Column F</option>
+                  <option value="column G">Column G</option>
+                  <option value="column H">Column H</option>
+                  <option value="column I">Column I</option>
+                  <option value="column J">Column J</option>
+                </select>
+              </label>
+              <label>Others
+                <select name="others">
+                  <option value="column A">Column A</option>
+                  <option value="column B">Column B</option>
+                  <option value="column C">Column C</option>
+                  <option value="column D" selected>Column D</option>
+                  <option value="column E">Column E</option>
+                  <option value="column F">Column F</option>
+                  <option value="column G">Column G</option>
+                  <option value="column H">Column H</option>
+                  <option value="column I">Column I</option>
+                  <option value="column J">Column J</option>
+                </select>
+              </label>
+          </fieldset>
+        </div>
+        <div class="container">
+            <fieldset id="routing_info">
+                <legend id="legend">3) Choose your route preferences: </legend>
+                <div>
+                <input type="radio" name="routing_type" value="Auto" checked> Auto (shortest total distance)
+              <label id="or_maximize">or maximize:</label>
+                <input type="radio" name="routing_type" value="stops/route"> stops/route
+                <input type="text" name="routing_constraint" placeholder="...">
+              <label id="or_maximize">or max:</label>
+                <input type="radio" name="routing_type" value="parcels/route"> parcels/route
+                <input type="text" name="routing_constraint" placeholder="...">
+              <label>quantity
+                  <select name="parcel_quantity">
+                    <option value="column A">Column A</option>
+                    <option value="column B">Column B</option>
+                    <option value="column C">Column C</option>
+                    <option value="column D">Column D</option>
+                    <option value="column E">Column E</option>
+                    <option value="column F" selected>Column F</option>
+                    <option value="column G">Column G</option>
+                    <option value="column H">Column H</option>
+                    <option value="column I">Column I</option>
+                    <option value="column J">Column J</option>
+                  </select>
+              </label>
+              <label id="or_maximize">or max:</label>
+                <input type="radio" name="routing_type" value="weight/route"> volume
+                <input type="text" name="routing_constraint" placeholder="...">
+              <label>volume
+                  <select name="parcel_size">
+                    <option value="column A">Column A</option>
+                    <option value="column B">Column B</option>
+                    <option value="column C">Column C</option>
+                    <option value="column D">Column D</option>
+                    <option value="column E">Column E</option>
+                    <option value="column F">Column F</option>
+                    <option value="column G" selected>Column G</option>
+                    <option value="column H">Column H</option>
+                    <option value="column I">Column I</option>
+                    <option value="column J">Column J</option>
+                  </select>
+              </label>
+            </fieldset>
+        </div>
+        <div class="container" id="csv">
+          <p>4) Copy and paste your csv information below</p>
+          <img src="csv.png"/>
+        </div>
+    <footer>
+      <small>&copy; LaSmile</small>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
