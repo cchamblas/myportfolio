@@ -13,126 +13,33 @@
   </head>
   <body>
     <!-- navbar -->
-  <nav class="navbar navbar-expand-xl w-100" id="navbar">
 
-    <div>
-        <a href="index.html" class="pl-4">Charles's folio</a>
-    </div>
-    <div class="navbar navbar-menu d-flex">
-        <a href=# class="p-4">Apple's clone</a>
-        <a href=# class="p-4">Airbnb's clone</a>
-        <a href=# class="p-4">Max Mile</a>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-xl">
+      <a href="index.html"><h1 class="pb-1" id="max"><h1>Charles' folio</h1></a>
+  <div class="navbar d-none d-md-flex">
+  <div>
+    <a href=# class="p-4">Newsweek</a>
+    <a href=# class="p-4">Apple</a>
+    <a href=# class="p-4">Airbnb</a>
+    <a href=# class="p-4">Airbnb</a>
+    <a href=# class="p-4">Max Mile</a>
+  </div>
+</div>
 
+<a class="navbar-toggler d-md-none position-relative" data-toggle="collapse" href="#Menu"><i class="fas fa-bars"></i></a>
 
-  <body>
-      <div class="container">
-        <fieldset id="warehouse_info">
-            <legend id="legend">1) Choose your type of last-mile jobs:</legend>
-            <input type="radio" name="job_type" value="deliveries" checked> Deliveries - warehouse to clients
-            <input type="radio" name="job_type" value="returns"> Returns - clients to warehouse
-            <input style=margin-left:15px; type="text" name="warehouse address:" placeholder="enter warehouse address...">
-        </fieldset>
-      </div>
-      <div class="container">
-        <fieldset id="locations_info">
-            <legend id="legend">2) Map your locations info</legend>
-              <label>City:<input type="text" name="city"></label>
-              <label>Main address info
-                <select name="address">
-                  <option value="column A">Column A</option>
-                  <option value="column B" selected>Column B</option>
-                  <option value="column C">Column C</option>
-                  <option value="column D">Column D</option>
-                  <option value="column E">Column E</option>
-                  <option value="column F">Column F</option>
-                  <option value="column G">Column G</option>
-                  <option value="column H">Column H</option>
-                  <option value="column I">Column I</option>
-                  <option value="column J">Column J</option>
-                </select>
-              </label>
-              <label>District
-                <select name="district">
-                  <option value="column A">Column A</option>
-                  <option value="column B">Column B</option>
-                  <option value="column C" selected>Column C</option>
-                  <option value="column D">Column D</option>
-                  <option value="column E">Column E</option>
-                  <option value="column F">Column F</option>
-                  <option value="column G">Column G</option>
-                  <option value="column H">Column H</option>
-                  <option value="column I">Column I</option>
-                  <option value="column J">Column J</option>
-                </select>
-              </label>
-              <label>Others
-                <select name="others">
-                  <option value="column A">Column A</option>
-                  <option value="column B">Column B</option>
-                  <option value="column C">Column C</option>
-                  <option value="column D" selected>Column D</option>
-                  <option value="column E">Column E</option>
-                  <option value="column F">Column F</option>
-                  <option value="column G">Column G</option>
-                  <option value="column H">Column H</option>
-                  <option value="column I">Column I</option>
-                  <option value="column J">Column J</option>
-                </select>
-              </label>
-          </fieldset>
-        </div>
-        <div class="container">
-            <fieldset id="routing_info">
-                <legend id="legend">3) Choose your route preferences: </legend>
-                <div>
-                <input type="radio" name="routing_type" value="Auto" checked> Auto (shortest total distance)
-              <label id="or_maximize">or maximize:</label>
-                <input type="radio" name="routing_type" value="stops/route"> stops/route
-                <input type="text" name="routing_constraint" placeholder="...">
-              <label id="or_maximize">or max:</label>
-                <input type="radio" name="routing_type" value="parcels/route"> parcels/route
-                <input type="text" name="routing_constraint" placeholder="...">
-              <label>quantity
-                  <select name="parcel_quantity">
-                    <option value="column A">Column A</option>
-                    <option value="column B">Column B</option>
-                    <option value="column C">Column C</option>
-                    <option value="column D">Column D</option>
-                    <option value="column E">Column E</option>
-                    <option value="column F" selected>Column F</option>
-                    <option value="column G">Column G</option>
-                    <option value="column H">Column H</option>
-                    <option value="column I">Column I</option>
-                    <option value="column J">Column J</option>
-                  </select>
-              </label>
-              <label id="or_maximize">or max:</label>
-                <input type="radio" name="routing_type" value="weight/route"> volume
-                <input type="text" name="routing_constraint" placeholder="...">
-              <label>volume
-                  <select name="parcel_size">
-                    <option value="column A">Column A</option>
-                    <option value="column B">Column B</option>
-                    <option value="column C">Column C</option>
-                    <option value="column D">Column D</option>
-                    <option value="column E">Column E</option>
-                    <option value="column F">Column F</option>
-                    <option value="column G" selected>Column G</option>
-                    <option value="column H">Column H</option>
-                    <option value="column I">Column I</option>
-                    <option value="column J">Column J</option>
-                  </select>
-              </label>
-            </fieldset>
-        </div>
-        <div class="container" id="csv">
-          <p>4) Copy and paste your csv information below</p>
-          <img src="csv.png"/>
-        </div>
-    <footer>
-      <small>&copy; LaSmile</small>
+  <div class="mobile-menu collapse rounded border-color-black position-absolute" id="Menu">
+    <a class="mr-4 mb-3" href="index.html"><i class="fas fa-times d-flex justify-content-end"></i></a>
+    <a href=# class="p-4">Newsweek</a>
+    <a href=# class="p-4">Apple</a>
+    <a href=# class="p-4">Airbnb</a>
+    <a href=# class="p-4">Airbnb</a>
+    <a href=# class="p-4">Max Mile</a>
+  </div>
+
+</nav>
+
+<footer>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
