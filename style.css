@@ -22,6 +22,12 @@ h1 {
   text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.67);
 }
 
+h2 {
+  color: #000;
+  font: 700 36px "Red Hat Text", sans-serif;
+  letter-spacing: 10px;
+}
+
 .mobile-menu {
   z-index: 1;
   top: 0;
@@ -35,6 +41,19 @@ h1 {
   display: block;
 }
 
+.scrollableRow {
+  overflow-x: scroll;
+  margin-left: -24px;
+  margin-right: -24px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.scrollableRow > [class*=col-] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
 @media (min-width: 1200px) {
   #Menu {
     display: none !important;
@@ -42,11 +61,12 @@ h1 {
 }
 
 .layout {
-  height: 50px;
+  height: 10px;
   background-color: lightgrey;
 }
 
-.hero {
-  max-height: 50%;
-  max-width: 50%;
+.aspectRatioBox {
+  padding-top: 66%;
+  background-size: cover;
+  background-position: bottom;
 }
