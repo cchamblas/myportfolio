@@ -3,10 +3,14 @@
   background-color: #C70039;
 }
 
+p {
+  font: 300 .8em "Red Hat Text", sans-serif;
+}
+
 a {
   color: #DEC9C6;
   font-weight: bold;
-  font: 24px "Red Hat Text", sans-serif;
+  font: 1em "Red Hat Text", sans-serif;
 }
 
 a:hover {
@@ -16,16 +20,20 @@ a:hover {
 
 h1 {
   color: #fff;
-  font: 700 36px "Red Hat Text", sans-serif;
+  font: 700 24px "Red Hat Text", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.67);
+  letter-spacing: 5px;
 }
 
 h2 {
   color: #000;
-  font: 700 36px "Red Hat Text", sans-serif;
-  letter-spacing: 10px;
+  font: 700 26px "Red Hat Text", sans-serif;
+}
+
+h3 {
+  color: #000;
+  font: 100 16px "Red Hat Text", sans-serif;
+  margin-top: 5px;
 }
 
 .mobile-menu {
@@ -39,19 +47,6 @@ h2 {
 
 .mobile-menu > a {
   display: block;
-}
-
-.scrollableRow {
-  overflow-x: scroll;
-  margin-left: -24px;
-  margin-right: -24px;
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-.scrollableRow > [class*=col-] {
-  padding-left: 6px;
-  padding-right: 6px;
 }
 
 @media (min-width: 1200px) {
@@ -69,4 +64,17 @@ h2 {
   padding-top: 66%;
   background-size: cover;
   background-position: bottom;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.hero_main > a:hover {
+  text-decoration: underline;
+  color: #C70039;
 }
