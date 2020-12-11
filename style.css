@@ -1,6 +1,6 @@
 .navbar {
   justify-content: space-around;
-  background-color: #C70039;
+  background-color: #006aa1;
 }
 
 p {
@@ -77,4 +77,11 @@ h3 {
 .hero_main > a:hover {
   text-decoration: underline;
   color: #C70039;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background-color: grey;
 }
