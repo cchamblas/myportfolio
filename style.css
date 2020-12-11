@@ -82,6 +82,10 @@ h3 {
 .footer {
   position: fixed;
   bottom: 0;
-  height: 100px;
-  background-color: grey;
+  height: 50px;
+  background-color: #F9FAFC;
+}
+
+.socials > a{
+  color: #006aa1;
 }
